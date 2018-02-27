@@ -108,11 +108,13 @@ html, body{
   
   transition: width .3s ease-in-out;
  }
-
- .first-screen--link:hover:after,
- .first-screen--link:focus:after {
+.first-screen--link:hover, .first-screen--link:focus{
+	text-decoration: none;
+	color: #081316;
+}
+.first-screen--link:hover:after,
+.first-screen--link:focus:after {
       width: 100%;
-	 text-decoration: none;
     }
 
 
@@ -188,9 +190,12 @@ margin-bottom: 5px;
   transition: width .5s ease-in-out;
  }
 
-.contacts--telephon:hover:after,
-.contacts--telephon:focus:after {
-		text-decoration: none;
+.contacts--telephon:hover, .contacts--telephon:focus{
+	text-decoration: none;
+	color: #132F38;
+}
+.contacts--telephon:hover, .contacts--telephon:hover:after,
+.contacts--telephon:hover, .contacts--telephon:focus:after {
       width: 100%;
 }
 
