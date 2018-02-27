@@ -94,7 +94,7 @@ html, body{
 	display: inline-block;
 	margin: 0 auto;
 
-	font-size: 15px;
+	font-size: 20px;
 	color: #081316;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -112,6 +112,7 @@ html, body{
  .first-screen--link:hover:after,
  .first-screen--link:focus:after {
       width: 100%;
+	 text-decoration: none;
     }
 
 
@@ -189,6 +190,7 @@ margin-bottom: 5px;
 
 .contacts--telephon:hover:after,
 .contacts--telephon:focus:after {
+		text-decoration: none;
       width: 100%;
 }
 
