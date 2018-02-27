@@ -2,50 +2,57 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Салон Життєдайна квітка</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<section class="first-screen">
-		<img src="img/воздух_110пх.svg" alt="Життєдайна квітка" class="first-screen--logo">
-		<h1 class="first-screen--title">Незабором відкриття</h1>
-		<a href="/" class="first-screen--link">Вакансії</a>
-	</section>
+<section class="first-screen">
+	<img src="img/воздух_110пх.svg" alt="Життєдайна квітка" class="first-screen--logo">
+	<h1 class="first-screen--title">Незабором відкриття</h1>
+	<a href="/" class="first-screen--link">Вакансії</a>
+</section>
 	<section class="contacts">
 	<h1 class="contacts--title">Контакти</h1>
-		<ul class="contacts--list">
-			<li class="contacts">
-				<div class="contacts--icon">
-					<img src="img/contacts--telephon.png" alt="" class="contacts--image">
+		<ul class="contacts--list row">
+			<li class="contacts--list information-card col-lg col-xs-12 col-md-4  ">
+				<div class="information-card--container">
+					<div class="information-card--icon">
+						<img src="img/contacts--telephon.png" alt="" class="information-card--image">
 					</div>
 					<div class="contacts--text">
-						<div class="contats--carts-title">Для зв'язку</div>
-						<ul class="contacts--telephons-list">
-							<li class="contacts--information"><a href="tel:"  class="contacts--telephon">050-123-12-12</a></li>
-							<li class="contacts--information"><a href="tel:" class="contacts--telephon">050-123-12-12</a></li>
+						<div class="information-card--title">Для зв'язку</div>
+						<ul class="information-card--telephons-list">
+							<li class="information-card--information"><a href="tel:"  class="information-card--telephone">050-123-12-12</a></li>
+							<li class="information-card--information"><a href="tel:" class="information-card--telephone">050-123-12-12</a></li>
 						</ul>
 					</div>
+				</div>
 				
 			</li>
-			<li class="contacts">
-				<div class="contacts--icon">
-					<img src="img/contacts--point.png" alt="" class="contacts--image">
+			<li class="contacts--item information-card col-xs-12 col-md-4">
+				<div class="information-card--container">
+				<div class="information-card--icon">
+					<img src="img/contacts--point.png" alt="" class="information-card--image">
 					</div>
 					<div class="contacts--text">
-						<div class="contats--carts-title">Адреса та години роботи салону краси</div>
-						<div class="contacts--information">вул.Йорданська, 20</div>
-						<div class="contacts--information">пн-вс: 9 до 20</div>
+						<div class="information-card--title">Адреса та години роботи салону краси</div>
+						<div class="information-card--information">вул.Йорданська, 20</div>
+						<div class="information-card--information">пн-вс: 9 до 20</div>
 					</div>
-				
+				</div>
 			</li>
-			<li class="contacts">
-				<div class="contacts--icon">
-					<img src="img/contacts--car.png" alt="" class="contacts--image">
+			<li class="contacts--item information-card col-xs-12 col-md-4">
+				<div class="information-card--container">
+				<div class="information-card--icon">
+					<img src="img/contacts--car.png" alt="" class="information-card--image">
 					</div>
-					<div class="contacts--text">
+					<div class="information-card--text">
 						<div class="contats--carts-title">Як доїхати</div>
 					</div>
-				
+				</div>
 			</li>
 		</ul>
 
@@ -53,21 +60,21 @@
 	</section>
 
 
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqNC4AwtjrNXY3eTykpbffVgtUpcEJCt8&callback=initMap"
-  async defer>
-  <script>
-      function initMap() {
+<script>
+    function initMap() {
         var uluru = {lat: 50.498419, lng: 30.506344};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
+            zoom: 15,
+            center: uluru
         });
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+            position: uluru,
+            map: map
         });
-      }
-    </script>
+    }
+</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqNC4AwtjrNXY3eTykpbffVgtUpcEJCt8&callback=initMap"
+			async defer></script>
+
 </body>
 </html>
