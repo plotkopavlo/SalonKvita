@@ -79,13 +79,13 @@ html, body{
 }
 .first-screen--logo{
 	display: block;
-	margin: 0 auto calc(100vh*0.3) auto;
+	margin: 0 auto 30% auto;
 	max-height: 140px;
 
 }
 .first-screen--title{
 	display: block;
-	margin: 0 auto 20 px;
+	margin: 0 auto 20px 0;
 
 	text-transform: uppercase;
 
