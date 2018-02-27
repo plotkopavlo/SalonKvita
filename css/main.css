@@ -137,6 +137,10 @@ html, body{
 	margin-bottom: 20px;
 }
 .contacts--list{
+	width:100%;
+}
+.contacts--item{
+	padding: 0;
 
 }
 .information-card--container{
