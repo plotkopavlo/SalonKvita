@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Салон Життєдайна квітка</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<section class="first-screen">
+		<img src="img/воздух_110пх.svg" alt="Життєдайна квітка" class="first-screen--logo">
+		<h1 class="first-screen--title">Незабором відкриття</h1>
+		<a href="/" class="first-screen--link">Вакансії</a>
+	</section>
+	<section class="contacts">
+	<h1 class="contacts--title">Контакти</h1>
+		<ul class="contacts--list">
+			<li class="contacts">
+				<div class="contacts--icon">
+					<img src="img/contacts--telephon.png" alt="" class="contacts--image">
+					</div>
+					<div class="contacts--text">
+						<div class="contats--carts-title">Для зв'язку</div>
+						<ul class="contacts--telephons-list">
+							<li class="contacts--information"><a href="tel:"  class="contacts--telephon">050-123-12-12</a></li>
+							<li class="contacts--information"><a href="tel:" class="contacts--telephon">050-123-12-12</a></li>
+						</ul>
+					</div>
+				
+			</li>
+			<li class="contacts">
+				<div class="contacts--icon">
+					<img src="img/contacts--point.png" alt="" class="contacts--image">
+					</div>
+					<div class="contacts--text">
+						<div class="contats--carts-title">Адреса та години роботи салону краси</div>
+						<div class="contacts--information">вул.Йорданська, 20</div>
+						<div class="contacts--information">пн-вс: 9 до 20</div>
+					</div>
+				
+			</li>
+			<li class="contacts">
+				<div class="contacts--icon">
+					<img src="img/contacts--car.png" alt="" class="contacts--image">
+					</div>
+					<div class="contacts--text">
+						<div class="contats--carts-title">Як доїхати</div>
+					</div>
+				
+			</li>
+		</ul>
+
+		<div class="contacts--map" id="map"></div>
+	</section>
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqNC4AwtjrNXY3eTykpbffVgtUpcEJCt8&callback=initMap"
+  async defer>
+  <script>
+      function initMap() {
+        var uluru = {lat: 50.498419, lng: 30.506344};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+</body>
+</html>
