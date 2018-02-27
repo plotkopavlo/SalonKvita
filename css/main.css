@@ -199,3 +199,22 @@ margin-bottom: 5px;
 
 	margin:0 auto;
 }
+
+
+/* jobs*/
+.jobs{
+
+}
+.jobs--content{
+	padding-top:10px;
+}
+.jobs--logo{
+	display: inline-block;
+	max-height: 80px;
+}
+.jobs--list{
+	margin-left:20px;
+}
+.jobs--item{
+	list-style: disc;
+}
