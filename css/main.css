@@ -54,7 +54,7 @@ html, body{
 	width: 100%;
 	height: 100vh;
 	
-	padding-top: 5%;
+	padding-top: 2%;
 
 	text-align: center;
 }
@@ -68,7 +68,7 @@ html, body{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: 0.5;
+	opacity: 0.3;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -79,13 +79,16 @@ html, body{
 }
 .first-screen--logo{
 	display: block;
-	margin: 0 auto 10% auto;
+	margin: 0 auto 5% auto;
 	max-height: 140px;
 
 }
 .first-screen--title{
 	display: block;
 	margin: 0 auto 20px 0;
+	font-weight: lighter;
+	font-size: 4.5rem;
+	color: #284670;
 
 	text-transform: uppercase;
 
@@ -95,7 +98,7 @@ html, body{
 	margin: 0 auto;
 
 	font-size: 20px;
-	color: #081316;
+	color: #284670;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -104,13 +107,13 @@ html, body{
   content: "";
   height: 2px;
   width: 0%;
-  background-color: #081316;
+  background-color: #284670;
   
   transition: width .3s ease-in-out;
  }
 .first-screen--link:hover, .first-screen--link:focus{
 	text-decoration: none;
-	color: #081316;
+	color: #284670;
 }
 .first-screen--link:hover:after,
 .first-screen--link:focus:after {
@@ -142,9 +145,11 @@ html, body{
 }
 .contacts--list{
 	width:100%;
+	margin: 0;
 }
 .contacts--item{
 	padding: 0;
+	margin-bottom:40px;
 
 }
 .information-card--container{
@@ -155,7 +160,7 @@ html, body{
 	width: 100px;
 	height: 100px;
 	display: inline-block;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	
 }
 .information-card--image{
@@ -165,19 +170,19 @@ html, body{
     -webkit-border-radius: 50%;
 }
 .information-card--text{
+	font-size: 16px;
 
 }
 
-.information-card-title{
+.information-card--title{
 	margin-bottom: 10px;
 }
 
 .information-card--information{
-margin-bottom: 5px;
+margin-bottom: 2px;
 }
 
 .information-card--telephone{
-	font-size: 15px;
 	color: #132F38;
 	text-decoration: none;
 }
